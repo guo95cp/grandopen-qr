@@ -172,32 +172,36 @@ button {
   width: 100%;
   min-height: 520px;
   margin-top: 80px;
+  isolation: isolate;
 }
 
 .discount-card {
   position: absolute;
   top: 20px;
   left: 50%;
+  z-index: 2;
   width: 85%;
   transform: translateX(-50%);
 }
 
 .coin {
   position: absolute;
-  z-index: 2;
+  max-width: none;
+  pointer-events: none;
 }
 
 .coin-top {
-  top: -15%;
-  right: -10%;
+  top: -20px;
+  right: -28px;
+  z-index: 3;
   width: 40%;
 }
 
 .coin-bottom {
-  left: -15%;
-  bottom: 10%;
+  left: -48px;
+  bottom: 25px;
+  z-index: 1;
   width: 40%;
-  z-index: -100;
   opacity: 0.8;
 }
 
