@@ -1,60 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
+  <title>영칼로리포케 동탄점 오픈 이벤트</title>
   <meta
     name="description"
-    content="영칼로리포케 판교점 그랜드 오픈 안내"
-  >
+    content="영칼로리포케 동탄점 오픈 3일 이벤트. 매일 선착순 50그릇 50% 할인."
+  />
 
-  <title>영칼로리포케 판교점</title>
-
-  <!-- 전체 지점에서 공통으로 사용할 CSS -->
-  <link rel="stylesheet" href="../assets/css/common.css">
-
-  <!-- 판교 페이지 전용 CSS -->
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <main class="page">
-    <section class="hero">
-      <p class="hero__label">GRAND OPEN</p>
+    <!-- HERO -->
+    <section class="hero section-dark">
+      <div class="section-inner hero-inner">
+        <img class="hero-logo" src="./images/logo.png" alt="영칼로리포케" />
+        
+        <div class="hero-title">
+          <p class="hero-date">26.09.08</p> 
+          <p class="hero-subtitle">영칼로리 포케</p>
+          <h1 class="hero-store">판교점</h1>
+        </div>  
+        <div class="hero-visual reveal">
+          <img
+            class="hero-small-assets"
+            src="./images/s-3d-assets.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            class="hero-balloon"
+            src="./images/open-balloon.png"
+            alt="OPEN EVENT"
+          />
+        </div>
 
-      <h1 class="hero__title">
-        영칼로리포케<br>
-        판교점
-      </h1>
-
-      <p class="hero__date">
-        2026. 09. 08 OPEN
-      </p>
-
-      <div class="hero__event">
-        <strong>오픈 기념 프로모션</strong>
-        <p>오픈일부터 7일간 전 포케 메뉴 2,000원 할인</p>
+        <div class="hero-event-copy reveal">
+          <img
+            class="only-three-days"
+            src="./images/only-3days-01.png"
+            alt="단 3일 동안"
+          />
+          <img
+            class="fifty-sale"
+            src="./images/50plates-50sale.png"
+            alt="선착순 50그릇 50% 할인"
+          />
+        </div>
       </div>
+    </section>
 
-      <button
-        class="hero__button"
-        id="locationButton"
-        type="button"
-      >
-        매장 위치 확인
-      </button>
+    <!-- DISCOUNT CARD -->
+    <section class="discount-section">
+      <div class="section-inner discount-inner">
+        <div class="discount-composition reveal">
+          <img
+            class="discount-card"
+            src="./images/card.png"
+            alt="50% 할인 카드"
+          />
+          <img
+            class="coin coin-top"
+            src="./images/coin-01.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            class="coin coin-bottom"
+            src="./images/coin-02.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+
+        <img
+          class="middle-text reveal"
+          src="./images/middle-text.png"
+          alt="건강하고 배부른 영칼로리포케 오픈 이벤트 미리 확인하기"
+        />
+
+        <button class="scroll-button" type="button" aria-label="이벤트 메뉴 보기">
+          <img src="./images/arrow.png" alt="" aria-hidden="true" />
+        </button>
+      </div>
+    </section>
+
+    <!-- 3-DAY EVENT -->
+    <section class="event-section section-dark" id="event">
+      <div class="section-inner event-inner">
+        <img
+          class="event-title reveal"
+          src="./images/open-3days-02.png"
+          alt="오픈 3일 이벤트"
+        />
+
+        <div class="day-list">
+          <img
+            class="day-card reveal"
+            src="./images/day-01.png"
+            alt="9월 8일 화요일 닭다리살 포케 할인"
+            loading="lazy"
+          />
+          <img
+            class="day-card reveal"
+            src="./images/day-02.png"
+            alt="9월 9일 수요일 오리 훈제 포케 할인"
+            loading="lazy"
+          />
+          <img
+            class="day-card reveal"
+            src="./images/day-03.png"
+            alt="9월 10일 목요일 부채살 포케 할인"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="coming-soon reveal" aria-label="영칼로리포케 판교점 커밍순">
+          <p>영칼로리포케 판교점</p>
+          <strong>COMING<br />SOON</strong>
+        </div>
+      </div>
     </section>
   </main>
 
-  <!-- 전체 지점에서 공통으로 사용할 JavaScript -->
-  <script src="../assets/js/common.js"></script>
-
-  <!-- 판교 페이지 전용 JavaScript -->
-  <script src="./script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
