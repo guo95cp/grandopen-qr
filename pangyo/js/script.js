@@ -19,12 +19,16 @@ revealElements.forEach((element) => {
   revealObserver.observe(element);
 });
 
-const scrollButton = document.querySelector(".scroll-button");
+const eventScrollButtons = document.querySelectorAll(".js-scroll-to-event");
 const eventSection = document.querySelector("#event");
 
-scrollButton?.addEventListener("click", () => {
+const scrollToEvent = () => {
   eventSection?.scrollIntoView({
     behavior: "smooth",
     block: "start",
   });
+};
+
+eventScrollButtons.forEach((button) => {
+  button.addEventListener("click", scrollToEvent);
 });
