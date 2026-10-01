@@ -213,10 +213,11 @@ body {
 .big-50 small {
   position: absolute;
   bottom: 0;
-  right: 10%;
+  right: 5%;
   top: 40%;
   font-size: 30px;
   font-weight: 800;
+  color: var(--green);
   /* border-bottom: 4px solid var(--green); */
 }
 .menus {
@@ -265,7 +266,7 @@ body {
   left: -10%;
   filter: drop-shadow(0 25px 20px rgba(0, 0, 0, 0.16));
   /* transition: 0.3s; */
-   animation: foodRotate 40s linear infinite;
+   animation: foodRotate 60s linear infinite;
 }
 .limit {
   position: absolute;
@@ -299,7 +300,7 @@ body {
   margin: 20px 0 6px;
 }
 .menu-info h3 {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1;
   color: black;
   letter-spacing: -2.3px;
