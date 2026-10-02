@@ -266,7 +266,7 @@ body {
   left: -10%;
   filter: drop-shadow(0 25px 20px rgba(0, 0, 0, 0.16));
   /* transition: 0.3s; */
-   animation: foodRotate 60s linear infinite;
+   /* animation: foodRotate 60s linear infinite; */
 }
 .limit {
   position: absolute;
